@@ -25,18 +25,14 @@ galleryListEl.addEventListener('click', onGalleryItemClick);
 function onGalleryItemClick(event) {
     if (event.target.classList.contains('gallery__image')) {
         event.preventDefault();
-        item = `<div class="gallery">
-    <a href="images/image1.jpg"><img src="images/thumbs/thumb1.jpg" alt="" title=""/></a>
-    <a href="images/image2.jpg"><img src="images/thumbs/thumb2.jpg" alt="" title="Beautiful Image"/></a>
-</div>`
-        item.open();
-    }
-}
+    let gallery = new SimpleLightbox('.gallery a');
+   
+
 // gallery.on('error.simplelightbox', function () {
 // 	console.log("sdgdhgbd"); //
 // });;
-
-
+}
+}
 // galleryListEl.addEventListener('click', onGalleryItemClose);
 
 // function onGalleryItemClose (e) { 
