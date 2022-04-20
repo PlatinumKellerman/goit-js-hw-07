@@ -25,9 +25,9 @@ galleryListEl.addEventListener('click', onGalleryItemClick);
 function onGalleryItemClick(event) {
     if (event.target.classList.contains('gallery__image')) {
         event.preventDefault();
-    let gallery = new SimpleLightbox('.gallery a');
-   
+        let gallery = new SimpleLightbox('ul.gallery a', { captions: true }, {docClose: false});
 
+// let gallery = new SimpleLightbox('ul.gallery', {captions: true});
 // gallery.on('error.simplelightbox', function () {
 // 	console.log("sdgdhgbd"); //
 // });;
